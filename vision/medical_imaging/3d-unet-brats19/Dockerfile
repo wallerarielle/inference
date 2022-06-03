@@ -36,7 +36,7 @@ RUN python3 -m pip install tensorflow-addons https://github.com/onnx/onnx-tensor
 RUN python3 -m pip install onnxruntime>=1.7.0
 
 # Install batchgenerators to be compatible with nnUnet
-RUN python3 -m pip install batchgenerators<=0.21
+RUN python3 -m pip install batchgenerators==0.21
 
 # Install nnUnet
 COPY nnUnet /workspace/nnUnet
